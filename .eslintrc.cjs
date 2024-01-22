@@ -10,9 +10,9 @@ module.exports = {
       env: {
         node: true,
       },
-      files: [".eslintrc.js"],
+      files: [".eslintrc.cjs"],
       parserOptions: {
-        sourceType: "commonjs",
+        sourceType: "module",
       },
     },
   ],
@@ -21,7 +21,7 @@ module.exports = {
     project: "./tsconfig.json",
   },
   rules: {
-    "@typescript-eslint/semi": "off",
-    "@typescript-eslint/quotes": "error",
-  },
+    "semi": "off",
+    "@typescript-eslint/semi": ["error", "always"],
+  }
 };
