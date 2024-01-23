@@ -14,6 +14,7 @@ bot.start(ctx => {
 
 exports.handler = async (req: Request, context: Context) => {
   try {
+    console.log(Date.now());
     if (req.body !== null) {
       const data: Update = await req.json();
       await bot.handleUpdate(data);
