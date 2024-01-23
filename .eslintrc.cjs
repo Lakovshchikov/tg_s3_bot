@@ -23,5 +23,7 @@ module.exports = {
   rules: {
     "semi": "off",
     "@typescript-eslint/semi": ["error", "always"],
+    "@typescript-eslint/no-misused-promises": 0,
+    "@typescript-eslint/promise-function-async": 0
   }
 };
